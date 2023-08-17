@@ -28,7 +28,6 @@ export class VietQRBuilder {
   }
 
   toString() {
-    console.log(this.consumer)
     const currency = Currency.entryOf(this.consumer.currency);
 
     if(!currency) {

@@ -4,12 +4,12 @@
   "description": "Javascript library to work with EMV Compliant QR code",
   "main": "./dist/cjs/index.js",
   "module": "./dist/mjs/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/mjs/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/mjs/index.js"
+      "types": "./dist/mjs/index.d.ts",
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
     },
     "./package.json": "./package.json"
   },
@@ -23,9 +23,6 @@
   ],
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "crc": "^4.3.2"
-  },
   "devDependencies": {
     "@types/chai": "^4.3.5",
     "@types/crc": "^3.8.0",
@@ -35,7 +32,6 @@
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "chai": "^4.3.7",
-    "crc": "^4.3.2",
     "eslint": "^8.29.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
