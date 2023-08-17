@@ -12,6 +12,7 @@ deploy:
     - yarn test
     - yarn build
     - cd dist
+    - touch yarn.lock
     - yarn install
     - yarn npm publish
   only:
