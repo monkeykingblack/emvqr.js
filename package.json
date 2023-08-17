@@ -1,28 +1,10 @@
 {
-  "name": "@uni-libs/emvqr.js",
-  "version": "1.0.0",
-  "description": "Javascript library to work with EMV Compliant QR code",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/mjs/index.js",
-  "types": "./dist/mjs/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/mjs/index.d.ts",
-      "import": "./dist/mjs/index.js",
-      "require": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
-  },
+  "private": "true",
   "scripts": {
     "build": "./scripts/build",
     "fetch-banks": "node ./scripts/fetch-vietqr-bank.js",
     "test": "./scripts/test"
   },
-  "files": [
-    "/dist"
-  ],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.3.5",
     "@types/crc": "^3.8.0",

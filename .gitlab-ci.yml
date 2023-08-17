@@ -11,6 +11,7 @@ deploy:
     - yarn install --immutable
     - yarn test
     - yarn build
+    - cd dist
     - yarn npm publish
   only:
     - main
