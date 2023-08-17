@@ -9,6 +9,7 @@ deploy:
     - cat "${CONFIG_PRIVATE_REGISTRY}" > ~/.yarnrc.yml
     - cat ~/.yarnrc.yml
     - yarn install --immutable
+    - yarn test
     - yarn release
   only:
     - main
