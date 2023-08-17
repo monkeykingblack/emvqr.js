@@ -1,5 +1,7 @@
 {
-  "private": "true",
+  "workspaces": [
+    "dist"
+  ],
   "scripts": {
     "build": "./scripts/build",
     "fetch-banks": "node ./scripts/fetch-vietqr-bank.js",

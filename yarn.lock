@@ -407,6 +407,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uni-libs/emvqr.js@workspace:dist":
+  version: 0.0.0-use.local
+  resolution: "@uni-libs/emvqr.js@workspace:dist"
+  languageName: unknown
+  linkType: soft
+
 "abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
