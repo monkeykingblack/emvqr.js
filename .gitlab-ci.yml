@@ -12,6 +12,7 @@ deploy:
     - yarn test
     - yarn build
     - cd dist
+    - yarn install
     - yarn npm publish
   only:
     - main
