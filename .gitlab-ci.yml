@@ -10,7 +10,8 @@ deploy:
     - cat ~/.yarnrc.yml
     - yarn install --immutable
     - yarn test
-    - yarn release
+    - yarn build
+    - yarn npm publish
   only:
     - main
   tags:
