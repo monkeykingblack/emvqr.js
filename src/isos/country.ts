@@ -498,7 +498,6 @@ export default class Country {
 
   static readonly ZW = new Country('ZW', 'ZWE', '716');
 
-
   private constructor(
     public readonly alpha2: string,
     public readonly alpha3: string,

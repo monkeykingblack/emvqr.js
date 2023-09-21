@@ -1,5 +1,4 @@
 export default class Currency {
-
   // eslint-disable-next-line no-use-before-define
   private static ALL_VALUE: Map<string, Currency> = new Map();
 
@@ -27,7 +26,6 @@ export default class Currency {
 
   static readonly BBD = new Currency('BBD', '052');
 
-
   static readonly BDT = new Currency('BDT', '050');
 
   static readonly BGN = new Currency('BGN', '975');
@@ -51,7 +49,6 @@ export default class Currency {
   static readonly BTN = new Currency('BTN', '064');
 
   static readonly BWP = new Currency('BWP', '072');
-
 
   static readonly BYN = new Currency('BYN', '933');
 
@@ -77,7 +74,6 @@ export default class Currency {
 
   static readonly COU = new Currency('COU', '970');
 
-
   static readonly CRC = new Currency('CRC', '188');
 
   static readonly CUC = new Currency('CUC', '931');
@@ -101,7 +97,6 @@ export default class Currency {
   static readonly ERN = new Currency('ERN', '232');
 
   static readonly ETB = new Currency('ETB', '230');
-
 
   static readonly EUR = new Currency('EUR', '978');
 
@@ -127,7 +122,6 @@ export default class Currency {
 
   static readonly HKD = new Currency('HKD', '344');
 
-
   static readonly HNL = new Currency('HNL', '340');
 
   static readonly HRK = new Currency('HRK', '191');
@@ -151,7 +145,6 @@ export default class Currency {
   static readonly JMD = new Currency('JMD', '388');
 
   static readonly JOD = new Currency('JOD', '400');
-
 
   static readonly JPY = new Currency('JPY', '392');
 
@@ -177,7 +170,6 @@ export default class Currency {
 
   static readonly LBP = new Currency('LBP', '422');
 
-
   static readonly LKR = new Currency('LKR', '144');
 
   static readonly LRD = new Currency('LRD', '430');
@@ -201,7 +193,6 @@ export default class Currency {
   static readonly MOP = new Currency('MOP', '446');
 
   static readonly MRU = new Currency('MRU', '929');
-
 
   static readonly MUR = new Currency('MUR', '480');
 
@@ -227,7 +218,6 @@ export default class Currency {
 
   static readonly NPR = new Currency('NPR', '524');
 
-
   static readonly NZD = new Currency('NZD', '554');
 
   static readonly OMR = new Currency('OMR', '512');
@@ -251,7 +241,6 @@ export default class Currency {
   static readonly RON = new Currency('RON', '946');
 
   static readonly RSD = new Currency('RSD', '941');
-
 
   static readonly RUB = new Currency('RUB', '643');
 
@@ -277,7 +266,6 @@ export default class Currency {
 
   static readonly SRD = new Currency('SRD', '968');
 
-
   static readonly SSP = new Currency('SSP', '728');
 
   static readonly STN = new Currency('STN', '930');
@@ -301,7 +289,6 @@ export default class Currency {
   static readonly TRY = new Currency('TRY', '949');
 
   static readonly TTD = new Currency('TTD', '780');
-
 
   static readonly TWD = new Currency('TWD', '901');
 
@@ -327,7 +314,6 @@ export default class Currency {
 
   static readonly VND = new Currency('VND', '704');
 
-
   static readonly VUV = new Currency('VUV', '548');
 
   static readonly WST = new Currency('WST', '882');
@@ -352,7 +338,6 @@ export default class Currency {
 
   static readonly XOF = new Currency('XOF', '952');
 
-
   static readonly XPD = new Currency('XPD', '964');
 
   static readonly XPF = new Currency('XPF', '953');
@@ -374,7 +359,6 @@ export default class Currency {
   static readonly ZMW = new Currency('ZMW', '967');
 
   static readonly ZWL = new Currency('ZWL', '932');
-
 
   private constructor(
     public readonly code: string,

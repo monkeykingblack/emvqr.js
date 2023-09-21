@@ -6,4 +6,6 @@ module.exports = {
   slow: '100',
   timeout: '2000',
   ui: 'bdd',
+  extension: ['ts'],
+  spec: ['tests/**/*.test.ts'],
 };

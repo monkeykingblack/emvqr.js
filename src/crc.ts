@@ -1,3 +1,5 @@
+import { AbstractValidator } from 'fluent-ts-validator';
+
 let TABLE: Array<number> | Int32Array = [
   0x0000, 0x1021, 0x2042, 0x3063, 0x4084, 0x50a5, 0x60c6, 0x70e7, 0x8108, 0x9129, 0xa14a, 0xb16b,
   0xc18c, 0xd1ad, 0xe1ce, 0xf1ef, 0x1231, 0x0210, 0x3273, 0x2252, 0x52b5, 0x4294, 0x72f7, 0x62d6,
@@ -27,16 +29,34 @@ if (typeof Int32Array !== 'undefined') {
   TABLE = new Int32Array(TABLE);
 }
 
-function createBuffer (value: string) {
+function createBuffer(value: string) {
   return new TextEncoder().encode(value);
 }
 
 export default function crc(value: string) {
   let crc = 0xffff;
-  const current = createBuffer(value)
+  const current = createBuffer(value);
   for (let index = 0; index < current.length; index++) {
     crc = (TABLE[((crc >> 8) ^ current[index]) & 0xff] ^ (crc << 8)) & 0xffff;
   }
 
   return (crc >>> 0).toString(16);
+}
+
+export class CRC16Validate extends AbstractValidator<string> {
+  constructor() {
+    super();
+
+    this.validateIfString(value => value)
+      .hasMinLength(4)
+      .withFailureMessage('Invalid EMV, size less than 4');
+
+    this.validateIfString(value => value)
+      .fulfills(
+        value =>
+          value.slice(-4).toUpperCase() === crc(value.substring(0, value.length - 4)).toUpperCase(),
+      )
+      .withFailureMessage('Invalid CRC')
+      .when(value => value.length >= 4);
+  }
 }

@@ -211,15 +211,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/crc@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "@types/crc@npm:3.8.0"
-  dependencies:
-    "@types/node": "*"
-  checksum: bcf040c3026ec812f4ac87423f42e7ef869483e8b87967184bd2bd26c9a9c358fce41217383adf83a36b53e821a608e784f6a973fd02192b540f55a5395c9180
-  languageName: node
-  linkType: hard
-
 "@types/eslint@npm:^7.2.13":
   version: 7.29.0
   resolution: "@types/eslint@npm:7.29.0"
@@ -255,13 +246,6 @@ __metadata:
   version: 10.0.1
   resolution: "@types/mocha@npm:10.0.1"
   checksum: 224ea9fce7b1734ccdb9aa99a622d902a538ce1847bca7fd22c5fb38adcf3ed536f50f48f587085db988a4bb3c2eb68f4b98e1cd6a38bc5547bd3bbbedc54495
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:*":
-  version: 20.5.0
-  resolution: "@types/node@npm:20.5.0"
-  checksum: 659bc5fc93b5c02bd88ca4bfae4f6b9dc307d45884d1dd9d69df85819a9943cdc00cd3c87eec3048866df6a67f52297f74d170e47a44f61edb3e8f770d94e85e
   languageName: node
   linkType: hard
 
@@ -410,6 +394,8 @@ __metadata:
 "@uni-libs/emvqr.js@workspace:dist":
   version: 0.0.0-use.local
   resolution: "@uni-libs/emvqr.js@workspace:dist"
+  dependencies:
+    fluent-ts-validator: ^3.0.3
   languageName: unknown
   linkType: soft
 
@@ -1538,6 +1524,15 @@ __metadata:
   version: 3.2.7
   resolution: "flatted@npm:3.2.7"
   checksum: 427633049d55bdb80201c68f7eb1cbd533e03eac541f97d3aecab8c5526f12a20ccecaeede08b57503e772c769e7f8680b37e8d482d1e5f8d7e2194687f9ea35
+  languageName: node
+  linkType: hard
+
+"fluent-ts-validator@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "fluent-ts-validator@npm:3.0.3"
+  dependencies:
+    validator: 13.7.0
+  checksum: 76fed9ac7bbb5a7af8cfae7d36ca4854db8b9a92e00348857e991927f8489921ed2c7c77df7b1fcf441384a20acda03c96e94551d94920c01b80f57c31e5dd36
   languageName: node
   linkType: hard
 
@@ -3006,7 +3001,6 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@types/chai": ^4.3.5
-    "@types/crc": ^3.8.0
     "@types/mocha": ^10.0.1
     "@types/node": ^18.11.15
     "@types/prettier": ^2.7.1
@@ -3022,6 +3016,7 @@ __metadata:
     eslint-plugin-import: ^2.26.0
     eslint-plugin-no-only-tests: ^3.1.0
     eslint-plugin-prettier: ^4.2.1
+    fluent-ts-validator: ^3.0.3
     mocha: ^10.2.0
     mustache: ^4.2.0
     node-fetch: ^3.3.2
@@ -3574,6 +3569,13 @@ __metadata:
   version: 3.0.1
   resolution: "v8-compile-cache-lib@npm:3.0.1"
   checksum: 78089ad549e21bcdbfca10c08850022b22024cdcc2da9b168bcf5a73a6ed7bf01a9cebb9eac28e03cd23a684d81e0502797e88f3ccd27a32aeab1cfc44c39da0
+  languageName: node
+  linkType: hard
+
+"validator@npm:13.7.0":
+  version: 13.7.0
+  resolution: "validator@npm:13.7.0"
+  checksum: 2b83283de1222ca549a7ef57f46e8d49c6669213348db78b7045bce36a3b5843ff1e9f709ebf74574e06223461ee1f264f8cc9a26a0060a79a27de079d8286ef
   languageName: node
   linkType: hard
 

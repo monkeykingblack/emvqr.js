@@ -48,7 +48,6 @@ export default class Language {
 
   static readonly BR = new Language('BR');
 
-
   static readonly BG = new Language('BG');
 
   static readonly MY = new Language('MY');
@@ -94,7 +93,6 @@ export default class Language {
   static readonly FO = new Language('FO');
 
   static readonly FJ = new Language('FJ');
-
 
   static readonly FL = new Language('FL');
 
@@ -142,7 +140,6 @@ export default class Language {
 
   static readonly IK = new Language('IK');
 
-
   static readonly IO = new Language('IO');
 
   static readonly IS = new Language('IS');
@@ -188,7 +185,6 @@ export default class Language {
   static readonly LB = new Language('LB');
 
   static readonly LG = new Language('LG');
-
 
   static readonly LI = new Language('LI');
 
@@ -236,7 +232,6 @@ export default class Language {
 
   static readonly NN = new Language('NN');
 
-
   static readonly NO = new Language('NO');
 
   static readonly II = new Language('II');
@@ -282,7 +277,6 @@ export default class Language {
   static readonly SC = new Language('SC');
 
   static readonly SD = new Language('SD');
-
 
   static readonly SE = new Language('SE');
 
@@ -330,7 +324,6 @@ export default class Language {
 
   static readonly TK = new Language('TK');
 
-
   static readonly TL = new Language('TL');
 
   static readonly TN = new Language('TN');
@@ -377,9 +370,7 @@ export default class Language {
 
   static readonly ZA = new Language('ZA');
 
-
   static readonly ZU = new Language('ZU');
-
 
   private constructor(public readonly lang: string) {
     Language.ALL_VALUE.set(lang, this);

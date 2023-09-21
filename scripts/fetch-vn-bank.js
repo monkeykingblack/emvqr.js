@@ -1,6 +1,6 @@
-const path = require("path")
-const fs = require( "fs");
-const Mustache = require("mustache")
+const path = require('path');
+const fs = require('fs');
+const Mustache = require('mustache');
 
 const TEMPLATE = `
 export default class VNBank {
@@ -37,16 +37,18 @@ export default class VNBank {
     return !!this.entryOf(str)
   }
 }
-`
+`;
 
-const FILE_PATH = path.resolve(__dirname, "../src/vietqr/bank.ts")
+const FILE_PATH = path.resolve(__dirname, '../src/vietqr/bank.ts');
 
 const request = async () => {
-  const banks = await fetch("https://api.vietqr.io/v2/banks").then(res => res.json()).then(res => res.data)
-  
-  const content = Mustache.render(TEMPLATE, {banks})
+  const banks = await fetch('https://api.vietqr.io/v2/banks')
+    .then(res => res.json())
+    .then(res => res.data);
 
-  fs.writeFileSync(FILE_PATH, content)
-}
+  const content = Mustache.render(TEMPLATE, { banks });
 
-request()
+  fs.writeFileSync(FILE_PATH, content);
+};
+
+request();
