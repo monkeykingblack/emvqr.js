@@ -1,6 +1,6 @@
 {
-  "name": "@uni-libs/emvqr.js",
-  "version": "1.0.0",
+  "name": "emvqr.js",
+  "version": "1.1.0",
   "description": "Javascript library to work with EMV Compliant QR code",
   "type": "module",
   "types": "./mjs/index.d.ts",
@@ -19,6 +19,9 @@
     "*.js",
     "*.d.ts"
   ],
-  "author": "trungdq@unicloud.com.vn",
-  "license": "ISC"
+  "author": "d.q.t.7775@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "fluent-ts-validator": "^3.0.3"
+  }
 }
